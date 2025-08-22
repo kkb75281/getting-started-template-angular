@@ -35,15 +35,17 @@ import { skapi } from '../../main';
 
         <button type="submit">Login</button>
       </form>
-      <a routerLink="/forgot-password" style="display:block; text-align:center;"
-        >Forgot Password?</a
-      >
+      <div style="text-align: center; margin-top: 10px;">
+        <small>
+          <a routerLink="/forgot-password">Forgot Password?</a>
+        </small>
+      </div>
     </main>
   `,
 })
 export class LoginComponent implements OnInit {
-  email = '';
-  password = '';
+  email: string = '';
+  password: string = '';
 
   constructor(private router: Router) {}
 

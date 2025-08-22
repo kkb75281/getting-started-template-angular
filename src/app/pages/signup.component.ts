@@ -17,6 +17,7 @@ import { skapi } from '../../main';
         <input
           type="email"
           name="email"
+          [(ngModel)]="email"
           placeholder="your@email.com"
           required
         />
@@ -25,13 +26,20 @@ import { skapi } from '../../main';
         <input
           type="password"
           name="password"
+          [(ngModel)]="password"
           minlength="6"
           placeholder="At least 6 characters"
           required
         />
 
         <label for="name">Your Name</label>
-        <input type="text" name="name" placeholder="Your name" required />
+        <input
+          type="text"
+          name="name"
+          [(ngModel)]="name"
+          placeholder="Your name"
+          required
+        />
         <br />
 
         <button type="submit">Sign Up</button>
@@ -46,8 +54,9 @@ import { skapi } from '../../main';
   `,
 })
 export class SignupComponent implements OnInit {
-  email = '';
-  password = '';
+  email: string = '';
+  password: string = '';
+  name: string = '';
 
   constructor(private router: Router) {}
 
@@ -68,25 +77,19 @@ export class SignupComponent implements OnInit {
   onSignup(e: Event) {
     e.preventDefault();
 
-    let form = e.target as HTMLFormElement;
-    let email = (form.elements.namedItem('email') as HTMLInputElement).value;
-    let password = (form.elements.namedItem('password') as HTMLInputElement)
-      .value;
-    let name = (form.elements.namedItem('name') as HTMLInputElement).value;
-
-    if (!email.trim()) {
+    if (!this.email.trim()) {
       alert('Please enter your email.');
       return;
     }
-    if (!password.trim()) {
+    if (!this.password.trim()) {
       alert('Please enter your password.');
       return;
     }
 
     let parameters = {
-      email: email,
-      password: password,
-      name: name,
+      email: this.email,
+      password: this.password,
+      name: this.name,
     };
 
     let options = {

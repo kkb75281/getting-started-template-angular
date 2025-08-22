@@ -77,11 +77,11 @@ import { skapi } from '../../main';
 })
 export class UpdateProfileComponent implements OnInit {
   user: any = null;
-  email = '';
-  name = '';
-  birthdate = '';
-  emailPublic = false;
-  emailVerified = false;
+  email: string = '';
+  name: string = '';
+  birthdate: string = '';
+  emailPublic: boolean = false;
+  emailVerified: boolean = false;
 
   constructor(private router: Router) {}
 
@@ -97,6 +97,7 @@ export class UpdateProfileComponent implements OnInit {
           this.emailPublic =
             Boolean(user.email_public) && Boolean(user.email_verified);
           this.emailVerified = Boolean(user.email_verified);
+          this.user = user;
         } else {
           this.router.navigate(['/login']);
         }
