@@ -38,8 +38,4 @@ Upload the generated `dist/` folder to your server for deployment.
 
 Replace the `SERVICE_ID` and `OWNER_ID` values in `src/app/app.config.ts` or the relevant environment file with your own service information.
 
-Currently, the service runs in **Trial Mode**.
-
-**All user data will be deleted every 14 days.**
-
 You can get your own service ID from [Skapi](https://www.skapi.com).
