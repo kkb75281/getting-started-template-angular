@@ -36,6 +36,6 @@ Upload the generated `dist/` folder to your server for deployment.
 
 ## Important!
 
-Replace the `SERVICE_ID` and `OWNER_ID` values in `src/app/app.config.ts` or the relevant environment file with your own service information.
+Replace the `SERVICE_ID` and `OWNER_ID` values in `src/main.ts` with your own service information.
 
 You can get your own service ID from [Skapi](https://www.skapi.com).

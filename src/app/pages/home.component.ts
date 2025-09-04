@@ -9,16 +9,30 @@ import { skapi } from '../../main';
   imports: [RouterLink],
   template: `
     <main>
-      <h1>Index</h1>
+      <h1>Skapi Angular Starter Template</h1>
+      <p>This project is an Angular starter template using Skapi.</p>
+      <p>It includes the following basic features:</p>
+      <ul>
+        <li>Signup</li>
+        <li>Signup email verification</li>
+        <li>Login</li>
+      </ul>
+
+      <br />
+
+      <h2>Important!</h2>
       <p>
-        This is a HTML template for authentication features using
-        <a href="https://www.skapi.com">Skapi</a>.
-        <br />
-        No CSS is used in this template. So don't let the design fool you.
-        <br />
-        This template packs full solid authentication features you can use in
-        your HTML application.
+        Replace the SERVICE_ID and OWNER_ID values in src/main.ts with your own
+        service information.
       </p>
+      <p>
+        You can get your own service ID from
+        <a href="https://www.skapi.com">Skapi</a>.
+      </p>
+
+      <br />
+
+      <p style="font-weight: bold">Login or Sign-up below:</p>
       <a routerLink="/login">Login</a>
       <span> | </span>
       <a routerLink="/signup">Signup</a>

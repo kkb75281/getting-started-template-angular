@@ -26,20 +26,12 @@ input {
   }
 }
 
-button {
-  cursor: pointer;
-}
-
 section,
 form {
   max-width: 400px;
   margin: 0 auto;
 }
 
-.flex-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
+ul li {
+  margin-top: 4px;
 }
