@@ -34,6 +34,10 @@ npm run build
 
 Upload the generated `dist/` folder to your server for deployment.
 
+## Live Demo
+
+You can check our live demo [Here](https://getting-started-template-angular.skapi.com).
+
 ## Important!
 
 Replace the `SERVICE_ID` and `OWNER_ID` values in `src/main.ts` with your own service information.
