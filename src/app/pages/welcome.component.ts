@@ -15,6 +15,7 @@ import { skapi } from '../../main';
         Welcome, {{ user?.name || user?.email || user?.user_id }}!
       </p>
       <pre id="UserInfo">{{ user | json }}</pre>
+      <button id="logoutBtn" (click)="handleLogout()">Logout</button>
     </main>
   `,
 })
