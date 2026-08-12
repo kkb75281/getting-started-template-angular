@@ -40,6 +40,6 @@ You can check our live demo [Here](https://getting-started-template-angular.skap
 
 ## Important!
 
-Replace the `PROJECT_ID` and `OWNER_ID` values in `src/main.ts` with your own service information.
+Replace the `PROJECT_ID` value in `src/main.ts` with your own service information.
 
 You can get your own project ID from [Skapi](https://www.skapi.com).
